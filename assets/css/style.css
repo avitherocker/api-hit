@@ -1,0 +1,143 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+.container{
+  display: flex;
+}
+  #capsule-data{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+.detailsbtn{
+  width: auto;
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+  color: white;
+  background-color: #15145a;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+}
+.detailsbtn:hover{
+  font-size: 25px;
+  transition: 0.5s;
+}
+.image-path{
+  width: auto;
+    height: 30vh;
+    border-radius: 10px 22px 0px 22px;
+}
+
+.card{
+  width: 14%;
+  background-color: #ffe71152;
+  margin-top: 3vh;
+  border: 3px solid saddlebrown;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 0px 0px rgb(61 61 61 / 92%), 17px 17px 0px 0px rgb(255 255 255);
+  border-radius: 10px 22px 0px 22px; 
+}
+.shipcard{
+  width: 34%;
+  background-color: #ffe71152;
+  margin-top: 3vh;
+  border: 3px solid saddlebrown;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 0px 0px rgb(61 61 61 / 92%), 17px 17px 0px 0px rgb(255 255 255);
+  border-radius: 10px 22px 0px 22px; 
+}
+
+
+#capsule-details, #ship-details{
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+.new{
+  border: 7px solid #eaa25f;
+    width: 19vw;
+    display: flex;
+    flex-direction: column;
+    height: 61vh;
+    border-radius: 20px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+
+}
+
+#caps, #upcoming, #past, #core, #upcore, #pastcore, #allship{
+  background-color: #281d08;
+  color: white;
+  font-size: 31px;
+  border: 5px solid #ccc7c7;
+  border-radius: 13px;
+}
+
+

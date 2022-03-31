@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceX tour</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <script src="./assets/js/script.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+
+</head>
+
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#capsbtn" onclick="showcaps()" class="showcaps">Capsules</a>
+    <a href="#corebtn" onclick="showcores()" class="showcores">Cores</a>
+    <a href="#shipbtn" onclick="showships()" class="showships">Ships</a>
+    <a href="#">Dragons</a>
+    <a href="#">History</a>
+  </div>
+  <div class="container">
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰</button>
+      <h2>Welcome to SpaceX</h2>
+      <p>Click on the hamburger menu/bar icon to open our services.</p>
+
+
+          <div id="capsbtn" style="display: none;">
+            <button id="caps">All Capsules</button>
+            <button id="upcoming">Upcoming Capsules</button>
+            <button id="past">Past Capsules</button>
+          </div>
+          <div id="corebtn" style="display: none;">
+            <button id="core">All Cores</button>
+            <button id="upcore">Upcoming Cores</button>
+            <button id="pastcore">Past Cores</button>
+          </div>
+          <div id="shipbtn" style="display: none;">
+            <button id="allship">All Cores</button>
+            
+          </div>
+          <div id="capsule-data">
+
+
+
+          </div>
+    </div>
+    <div id="capsule-details" style="display:none">
+      <div class="new">
+        <div>
+        <b>Serial No. : </b><p class="capsule_serial"></p>
+        </div>
+        <b>Status : </b><p class="status"></p>
+        <b>Id : </b><p class="capsule_id"></p>
+        <b>Details : </b><p class="details"> </p>
+        <b>Type : </b><p class="type"></p>
+      </div>
+    </div>
+
+    <div id="ship-details" style="display:none">
+      <div class="new">
+        <div>
+        <b>Ship Id : </b><p class="ship_id"></p>
+        </div>
+        <b>Ship Name : </b><p class="ship_name"></p>
+        <b>Status : </b><p class="status"></p>
+        <b>Home Port : </b><p class="home_port"> </p>
+        <b>Ship Type : </b><p class="ship_type"></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
